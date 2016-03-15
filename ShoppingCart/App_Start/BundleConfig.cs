@@ -11,12 +11,9 @@ namespace ShoppingCart
             bundles.Add(new ScriptBundle("~/bundles/shoppingCart").Include(
                 "~/Scripts/jquery-{version}.js", "~/Scripts/jquery.validate*",
                 "~/Scripts/jquery-ui.js", "~/Scripts/bootstrap.js",
-                "~/Scripts/respond.js", "~/Scripts/knockout-{version}.js"));
-
-            // Use the development version of Modernizr to develop with and learn from. Then, when you're
-            // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
-            bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
-                        "~/Scripts/modernizr-*"));
+                "~/Scripts/respond.js", "~/Scripts/knockout-{version}.js",
+                "~/Scripts/knockout.custom.js",
+                "~/Scripts/ViewModels/CartSummaryViewModel.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
